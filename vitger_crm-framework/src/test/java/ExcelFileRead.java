@@ -1,5 +1,3 @@
-
-
 import java.io.FileInputStream;
 import java.io.IOException;
 
@@ -11,13 +9,10 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ExcelFileRead {
-
 	public static void main(String[] args) throws EncryptedDocumentException, IOException {
 		
 		FileInputStream fis = new FileInputStream("C:\\Users\\asjad\\OneDrive\\Desktop\\TestData.xlsx");
-
 		Workbook wb = WorkbookFactory.create (fis);
-		
 	Sheet sh =	wb.getSheet("Organizations");
 	
 	Row ro = sh.getRow(1);

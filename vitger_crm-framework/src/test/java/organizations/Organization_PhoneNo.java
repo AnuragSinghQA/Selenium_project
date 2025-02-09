@@ -1,4 +1,5 @@
 package organizations;
+
 import java.io.IOException;
 import java.time.Duration;
 
@@ -13,11 +14,11 @@ import object_repository.LoginPage;
 import object_repository.LogoutPage;
 import object_repository.OrganizationsPage;
 
-public class CreateOragnization {
-
-	@Test
+public class Organization_PhoneNo {
 	
-	public void createOragnization() throws InterruptedException, IOException {
+	@Test
+	public void organization_PhoneNo() throws IOException, InterruptedException {
+		
 		FileUtility fu = new FileUtility();
 		String URL = fu.getDataFromProp("url");
 		
@@ -39,7 +40,7 @@ public class CreateOragnization {
 		op.openCeateorganization();
 		
 		CreateOrganizationsPage cop = new CreateOrganizationsPage(driver);
-		cop.createOrganizationsWithName();
+		cop.createOrganizationsWithName_phone();;
 		String orgname =cop.orgname;
 		
 		String s2 = driver.findElement(By.className("dvHeaderText")).getText();
@@ -59,6 +60,8 @@ public class CreateOragnization {
 		System.out.println("LogoutPage");
 		
 		driver.close();
+		
+
 	}
 
 }

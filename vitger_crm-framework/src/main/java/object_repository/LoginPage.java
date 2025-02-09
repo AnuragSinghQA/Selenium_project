@@ -21,10 +21,9 @@ public class LoginPage {
 	}
 
 	@FindBy(name = "user_name")
-
 	private WebElement Username;
+	
 	@FindBy(name = "user_password")
-
 	private WebElement password;
 
 	@FindBy(id = "submitButton")

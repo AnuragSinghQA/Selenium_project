@@ -36,7 +36,7 @@ public class CreateOragnization {
 		hp.openOrganizations();
 		
 		OrganizationsPage op = new OrganizationsPage(driver);
-		op.openCeateorganization();
+		op.getAddOrganization().click();
 		
 		CreateOrganizationsPage cop = new CreateOrganizationsPage(driver);
 		cop.createOrganizationsWithName();

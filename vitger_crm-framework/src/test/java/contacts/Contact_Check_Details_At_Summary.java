@@ -46,7 +46,7 @@ public class Contact_Check_Details_At_Summary {
 
 		// Creating Contact
 		ContactsPage cp = new ContactsPage(driver);
-		cp.createOrginization();
+		cp.getCreateContact().click();
 		
 		// Check Records At summary page
 		driver.findElement(By.linkText("Contacts")).click();

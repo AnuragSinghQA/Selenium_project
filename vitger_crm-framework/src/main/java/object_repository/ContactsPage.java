@@ -22,68 +22,12 @@ public class ContactsPage {
 	@FindBy(xpath = "//img[@title='Create Contact...']")
 	private WebElement createContact;
 
-	@FindBy(name = "lastname")
-	private WebElement lastname;
-
-	@FindBy(xpath = "//img[@title='Select']")
-	private WebElement clickSelectOrganization;
-
-	@FindBy(id = "search_txt")
-	private WebElement searchfield;
-
-	@FindBy(id = "search")
-	private WebElement searchbutton;
-
-	@FindBy(xpath = "//a[@id='1']")
-	private WebElement selectOrganization;
-	
-	@FindBy(xpath = "//input[@type='submit']")
-	private WebElement save;
-
-//	String s4 = driver.findElement(By.xpath("//a[@id='1']")).getText();
+	@FindBy(xpath = "//img[@title='Create Contact...']")
+	private WebElement createContact1;
 	
 	public WebElement getCreateContact() {
 		return createContact;
 	}
 
-	public WebElement getLastname() {
-		return lastname;
-	}
-
-	public WebElement getSave() {
-		return save;
-	}
-
-	public WebElement getClickSelectOrganization() {
-		return clickSelectOrganization;
-	}
-
-	public WebElement getSearchfield() {
-		return searchfield;
-	}
-
-	public WebElement getSearchbutton() {
-		return searchbutton;
-	}
-
-	public WebElement getSelectOrganization() {
-		return selectOrganization;
-	}
-
-	public void createOrginization() throws IOException, InterruptedException {
-		Thread.sleep(3000);
-		getCreateContact();
-		getLastname();
-		getClickSelectOrganization();
-		Thread.sleep(3000);
-		wdu.switchTo("module=Accounts&action=Popup");
-		getSearchfield().sendKeys(fu.getDataFromExcel("Contacts", 1, 1));
-		getSearchbutton();
-		getSelectOrganization();
-		wdu.switchTo("module=Accounts&action=Edit");
-		getSave().click();
-		
-
-	}
 
 }

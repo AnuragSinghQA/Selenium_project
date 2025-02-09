@@ -34,11 +34,6 @@ public class OrganizationsPage {
 		return dropdown;
 	}
 	
-	public void openCeateorganization() 
-	{
-		getAddOrganization().click();
-		
-	}
 	
 	
 	

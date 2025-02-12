@@ -37,14 +37,5 @@ public class HomePage {
 		return Contacts;
 	}
 	
-	public void openOrganizations()
-	{
-		getOrganizations().click();
-	}
-	
-	public void openContacts()
-	{
-		getContacts().click();
-	}
 
 }

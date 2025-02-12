@@ -13,13 +13,13 @@ import generic_utility.WebDriverUtility;
 public class CreateContactsPage {
 	
 	WebDriver driver;
-	FileUtility fu = new FileUtility();
 
 	public CreateContactsPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
+	// WebElement
 
 	@FindBy(name = "lastname")
 	private WebElement lastname;
@@ -39,6 +39,8 @@ public class CreateContactsPage {
 	@FindBy(xpath = "//input[@type='submit']")
 	private WebElement save;
 	
+	
+	// Getter Methods
 
 	public WebElement getLastname() {
 		return lastname;
@@ -63,41 +65,8 @@ public class CreateContactsPage {
 	public WebElement getSelectOrganization() {
 		return selectOrganization;
 	}
-
-	public void createContactWithoutOrganization() throws IOException, InterruptedException {
-		ContactsPage cp = new ContactsPage(driver);
-		cp.getCreateContact().click();
-		getLastname().sendKeys(fu.getDataFromExcel("Contacts", 1, 0));;
-		getSave().click();
-		
-
-	}
 	
-	public void createContactWithOrganization() throws IOException, InterruptedException {
-		ContactsPage cp = new ContactsPage(driver);
-		// Create Organization
-				HomePage hp = new HomePage(driver);
-				hp.openOrganizations();
-				OrganizationsPage op = new OrganizationsPage(driver);
-				op.getAddOrganization().click();
-				CreateOrganizationsPage cop = new CreateOrganizationsPage(driver);
-				cop.createOrganizationsWithName();
-				Thread.sleep(3000);
-				hp.openContacts();
-				cp.getCreateContact().click();
-		getLastname().sendKeys(fu.getDataFromExcel("Contacts", 1, 0));;
-		getClickSelectOrganization().click();
-		Thread.sleep(3000);
-		WebDriverUtility wdu = new WebDriverUtility(driver);
-		wdu.switchTo("module=Accounts&action=Popup");
-		getSearchfield().sendKeys(cop.orgname);
-		getSearchbutton().click();
-		getSelectOrganization().click();
-		wdu.switchTo("module=Accounts&action=Edit");
-		getSave().click();
-		
-
-	}
+	
 
 
 }

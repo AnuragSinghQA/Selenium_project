@@ -34,17 +34,5 @@ public class FileUtility {
 		return cell.getStringCellValue();
 	}
 
-	public WebDriver selectBrowser() throws IOException {
-		if (getDataFromProp("bro").equalsIgnoreCase("chrome"))
-			return new ChromeDriver();
-		else if (getDataFromProp("bro").equalsIgnoreCase("edge"))
-			return new EdgeDriver();
-		else if (getDataFromProp("bro").equalsIgnoreCase("safari"))
-			return new SafariDriver();
-		else if (getDataFromProp("bro").equalsIgnoreCase("Firefox"))
-			return new FirefoxDriver();
-		else
-			return new ChromeDriver();
-	}
 
 }

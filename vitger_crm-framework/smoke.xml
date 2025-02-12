@@ -8,6 +8,8 @@
 	</groups>
   <test thread-count="5" name="Test">
     <classes>
+		<class name="contacts.CreateContactTest"/>
+		<class name="contacts.ContactWithIndustryTest"/>
       <class name="organizations.CreateOragnizationTest"/>
       <class name="organizations.Organization_PhoneNoTest"/>
       <class name="organizations.Organization_IndustryTest"/>

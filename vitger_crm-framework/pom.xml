@@ -7,8 +7,7 @@
 	<artifactId>vitger_crm-framework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-
-	<dependencies>
+<dependencies>
 		<!--
 		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
@@ -43,11 +42,8 @@
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
 			<version>5.0.9</version>
-		</dependency>
-
-
+</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<!-- Below plug-in is used to execute tests -->

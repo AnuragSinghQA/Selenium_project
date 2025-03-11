@@ -4,35 +4,35 @@
 	<listeners>
 		<listener class-name="generic_utility.ListenerImplementataion"></listener>
 	</listeners>
-	<test thread-count="2" parallel="tests" name="Test1">
+	<test thread-count="1" parallel="tests" name="Test1">
 		<parameter name="Browser" value="Chrome" />
 		<classes>
 			<class name="organizations.CreateOragnizationTest" />
 		</classes>
 	</test> <!--
 	Test -->
-	<test thread-count="2" parallel="tests" name="Test2">
+	<test thread-count="1" parallel="tests" name="Test2">
 		<parameter name="Browser" value="edge"/>
 		<classes>
 			<class name="organizations.Organization_PhoneNoTest" />
 		</classes>
 	</test> <!--
 	Test -->
-	<test thread-count="2" parallel="tests" name="Test3">
+	<test thread-count="1" parallel="tests" name="Test3">
 		<parameter name="Browser" value="edge" />
 		<classes>
 			<class name="contacts.CreateContactTest" />
 		</classes>
 	</test> <!--
 	Test -->
-	<test thread-count="2" parallel="tests" name="Test4">
+	<test thread-count="1" parallel="tests" name="Test4">
 		<parameter name="Browser" value="Chrome" />
 		<classes>
 			<class name="organizations.Organization_IndustryTest" />
 		</classes>
 	</test> <!--
 	Test -->
-	<test thread-count="2" parallel="tests" name="Test5">
+	<test thread-count="1" parallel="tests" name="Test5">
 		<classes>
 			<class name="contacts.ContactWithIndustryTest" />
 		</classes>

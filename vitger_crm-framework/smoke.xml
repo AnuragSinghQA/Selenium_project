@@ -9,7 +9,7 @@
 
 
 	<test thread-count="5" name="Test">
-		<parameter name="Browser" value="edge" />
+		<parameter name="Browser" value="chrome" />
 		<classes>
 			<class name="contacts.CreateContactTest" />
 			<class name="organizations.CreateOragnizationTest" />

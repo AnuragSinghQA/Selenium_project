@@ -14,8 +14,7 @@ import object_repository.OrganizationsPage;
 
 public class CreateContactTest extends BaseClass {
 
-	@Test
-
+	@Test(groups = "SmokeTest")
 	public void createContactTest() throws IOException, InterruptedException {
 		FileUtility fu = new FileUtility();
 		String orgname = fu.getDataFromExcel("Organizations", 1, 0) + (int) (Math.random() * 1000);
@@ -40,7 +39,6 @@ public class CreateContactTest extends BaseClass {
 		cp.getCreateContact().click();
 
 		ccp.getLastname().sendKeys(fu.getDataFromExcel("Contacts", 1, 0));
-		;
 		ccp.getSave().click();
 
 	}

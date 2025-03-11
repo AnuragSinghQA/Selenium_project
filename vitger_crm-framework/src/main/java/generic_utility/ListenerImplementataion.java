@@ -14,6 +14,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+
 public class ListenerImplementataion implements ITestListener, ISuiteListener {
 	public ExtentReports report;
 	public ExtentTest test ;
@@ -36,7 +37,7 @@ public class ListenerImplementataion implements ITestListener, ISuiteListener {
 
 		System.out.println("======START=====" + methodName + "========");
 		report.createTest(methodName);
-		test.log(Status.INFO, "======START=====" + methodName + "========");
+		test.log(Status.FAIL, "======START=====" + methodName + "========");
 	}
 
 	public void onTestSuccess(ITestResult result) {
@@ -47,7 +48,7 @@ public class ListenerImplementataion implements ITestListener, ISuiteListener {
 	public void onTestFailure(ITestResult result) {
 		String methodName = result.getMethod().getMethodName();
 		test = report.createTest(methodName);
-		test.log(Status.FAIL, "======FAILURE=====" + methodName);
+		test.log(com.aventstack.extentreports.Status.FAIL, "======FAILURE=====" + methodName);
 		WebDriver driver = BaseClass.driver;
 		TakesScreenshot tks = (TakesScreenshot)driver;
 		String src = tks.getScreenshotAs(OutputType.BASE64);

@@ -6,13 +6,15 @@
 			<include name="SmokeTest"></include>
 		</run>
 	</groups>
-	
-	
-  <test thread-count="5" name="Test">
-	<parameter name="Browser" value="edge"/>
-    <classes>
-		<class name="contacts.CreateContactTest"/>
-      <class name="organizations.CreateOragnizationTest"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+
+
+	<test thread-count="5" name="Test">
+		<parameter name="Browser" value="edge" />
+		<classes>
+			<class name="contacts.CreateContactTest" />
+			<class name="organizations.CreateOragnizationTest" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

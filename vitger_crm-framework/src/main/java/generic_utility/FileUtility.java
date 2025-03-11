@@ -23,7 +23,7 @@ public class FileUtility {
 	}
 
 	public String getDataFromExcel(String sheetname, int rownum, int cellnum) throws IOException {
-		FileInputStream excelFile = new FileInputStream("C:\\Users\\asjad\\OneDrive\\Desktop\\TestData.xlsx");
+		FileInputStream excelFile = new FileInputStream("C:\\Users\\asjad\\Downloads\\TestData.xlsx");
 		Workbook wb = WorkbookFactory.create(excelFile);
 		Sheet sh = wb.getSheet(sheetname);
 		Row row = sh.getRow(rownum);

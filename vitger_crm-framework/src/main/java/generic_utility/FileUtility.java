@@ -4,16 +4,13 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.safari.SafariDriver;
 
 public class FileUtility {
 	WebDriver driver;
@@ -31,6 +28,16 @@ public class FileUtility {
 		Sheet sh = wb.getSheet(sheetname);
 		Row row = sh.getRow(rownum);
 		Cell cell = row.getCell(cellnum);
+		return cell.getStringCellValue();
+	}
+	
+	public String DataFromExcel(String sheetName, int rowNum,int cellNum) throws EncryptedDocumentException, IOException {
+		FileInputStream fis2 = new FileInputStream("C:\\Users\\User\\Desktop\\testData.xlsx");
+		Workbook wb = WorkbookFactory.create(fis2);
+		Sheet sh = wb.getSheet(sheetName);
+		Row row = sh.getRow(rowNum);
+		Cell cell = row.createCell(cellNum);
+		cell.setCellValue("pass");
 		return cell.getStringCellValue();
 	}
 

@@ -13,7 +13,7 @@ import object_repository.HomePage;
 import object_repository.OrganizationsPage;
 
 public class ContactWithIndustryTest extends BaseClass{
-@Test (groups = "SmokeTest")
+@Test
 	
 	public void contactWithIndustryTest() throws IOException, InterruptedException {
 		

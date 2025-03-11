@@ -14,7 +14,7 @@ import object_repository.OrganizationsPage;
 
 public class CreateContactTest extends BaseClass {
 
-	@Test(groups = "RegressionTest")
+	@Test
 
 	public void createContactTest() throws IOException, InterruptedException {
 		FileUtility fu = new FileUtility();

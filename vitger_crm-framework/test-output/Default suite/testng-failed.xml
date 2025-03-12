@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="organizations.Organization_IndustryTest">
+      <class name="organizations.CreateOragnizationTest">
         <methods>
-          <include name="organization_IndustryTest"/>
           <include name="login"/>
-          <include name="closeBrowser"/>
-          <include name="selectBrowser"/>
+          <include name="createOragnizationTest"/>
           <include name="logout"/>
+          <include name="selectBrowser"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- organizations.Organization_IndustryTest -->
+      </class> <!-- organizations.CreateOragnizationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

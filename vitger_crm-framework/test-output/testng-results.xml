@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-12T18:22:01 IST" name="Suite" finished-at="2025-03-12T18:22:07 IST" duration-ms="6867">
+  <suite started-at="2025-03-13T00:31:45 IST" name="Suite" finished-at="2025-03-13T00:34:35 IST" duration-ms="169824">
     <groups>
       <group name="SmokeTest">
-        <method signature="CreateOragnizationTest.createOragnizationTest()[pri:0, instance:organizations.CreateOragnizationTest@22ff4249]" name="createOragnizationTest" class="organizations.CreateOragnizationTest"/>
-        <method signature="CreateContactTest.createContactTest()[pri:0, instance:contacts.CreateContactTest@3a52dba3]" name="createContactTest" class="contacts.CreateContactTest"/>
-        <method signature="ContactWithIndustryTest.contactWithIndustryTest()[pri:0, instance:contacts.ContactWithIndustryTest@510f3d34]" name="contactWithIndustryTest" class="contacts.ContactWithIndustryTest"/>
+        <method signature="CreateOragnizationTest.createOragnizationTest()[pri:0, instance:organizations.CreateOragnizationTest@2d1ef81a]" name="createOragnizationTest" class="organizations.CreateOragnizationTest"/>
+        <method signature="CreateContactTest.createContactTest()[pri:0, instance:contacts.CreateContactTest@2a5c8d3f]" name="createContactTest" class="contacts.CreateContactTest"/>
+        <method signature="ContactWithIndustryTest.contactWithIndustryTest()[pri:0, instance:contacts.ContactWithIndustryTest@7817fd62]" name="contactWithIndustryTest" class="contacts.ContactWithIndustryTest"/>
+        <method signature="ContactWithIndustryTest.contactWithIndustryTest()[pri:0, instance:contacts.ContactWithIndustryTest@247bddad]" name="contactWithIndustryTest" class="contacts.ContactWithIndustryTest"/>
+        <method signature="CreateContactTest.createContactTest()[pri:0, instance:contacts.CreateContactTest@3bd82cf5]" name="createContactTest" class="contacts.CreateContactTest"/>
+        <method signature="CreateOragnizationTest.createOragnizationTest()[pri:0, instance:organizations.CreateOragnizationTest@4c178a76]" name="createOragnizationTest" class="organizations.CreateOragnizationTest"/>
       </group> <!-- SmokeTest -->
       <group name="RegressionTest">
-        <method signature="Organization_PhoneNoTest.organization_PhoneNoTest()[pri:0, instance:organizations.Organization_PhoneNoTest@7a8c8dcf]" name="organization_PhoneNoTest" class="organizations.Organization_PhoneNoTest"/>
-        <method signature="Organization_IndustryTest.organization_IndustryTest()[pri:0, instance:organizations.Organization_IndustryTest@2925bf5b]" name="organization_IndustryTest" class="organizations.Organization_IndustryTest"/>
+        <method signature="Organization_PhoneNoTest.organization_PhoneNoTest()[pri:0, instance:organizations.Organization_PhoneNoTest@24269709]" name="organization_PhoneNoTest" class="organizations.Organization_PhoneNoTest"/>
+        <method signature="Organization_IndustryTest.organization_IndustryTest()[pri:0, instance:organizations.Organization_IndustryTest@710f4dc7]" name="organization_IndustryTest" class="organizations.Organization_IndustryTest"/>
+        <method signature="Organization_IndustryTest.organization_IndustryTest()[pri:0, instance:organizations.Organization_IndustryTest@544fa968]" name="organization_IndustryTest" class="organizations.Organization_IndustryTest"/>
+        <method signature="Organization_PhoneNoTest.organization_PhoneNoTest()[pri:0, instance:organizations.Organization_PhoneNoTest@fa4c865]" name="organization_PhoneNoTest" class="organizations.Organization_PhoneNoTest"/>
       </group> <!-- RegressionTest -->
     </groups>
-    <test started-at="2025-03-12T18:22:01 IST" name="Test5" finished-at="2025-03-12T18:22:07 IST" duration-ms="6725">
-      <class name="contacts.ContactWithIndustryTest">
-        <test-method is-config="true" signature="selectBrowser(java.lang.String)[pri:0, instance:contacts.ContactWithIndustryTest@510f3d34]" started-at="2025-03-12T18:22:01 IST" name="selectBrowser" finished-at="2025-03-12T18:22:02 IST" duration-ms="1737" status="PASS">
+    <test started-at="2025-03-13T00:31:45 IST" name="Test4" finished-at="2025-03-13T00:32:11 IST" duration-ms="26639">
+      <class name="organizations.Organization_IndustryTest">
+        <test-method is-config="true" signature="selectBrowser(java.lang.String)[pri:0, instance:organizations.Organization_IndustryTest@710f4dc7]" started-at="2025-03-13T00:31:45 IST" name="selectBrowser" finished-at="2025-03-13T00:31:47 IST" duration-ms="1717" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,175 +32,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:contacts.ContactWithIndustryTest@510f3d34]" started-at="2025-03-12T18:22:02 IST" name="login" finished-at="2025-03-12T18:22:07 IST" duration-ms="4898" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: stale element not found
-  (Session info: chrome=134.0.6998.37)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.23.1', revision: '656257d8e9'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4a6fd62db9e5ce757730a61956a64ed3, clickElement {id=f.1CF0246BBACA787CBEF878E6CF34E815.d.0FCC2C365FEA8525C768B2C99225DA81.e.69}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.37, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\asjad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57287}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57287/devtoo..., se:cdpVersion: 134.0.6998.37, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (4a6fd62db9e5ce757730a61956a64ed3)] -> id: submitButton]
-Session ID: 4a6fd62db9e5ce757730a61956a64ed3]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=134.0.6998.37)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.23.1', revision: '656257d8e9'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4a6fd62db9e5ce757730a61956a64ed3, clickElement {id=f.1CF0246BBACA787CBEF878E6CF34E815.d.0FCC2C365FEA8525C768B2C99225DA81.e.69}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.37, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\asjad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57287}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57287/devtoo..., se:cdpVersion: 134.0.6998.37, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (4a6fd62db9e5ce757730a61956a64ed3)] -> id: submitButton]
-Session ID: 4a6fd62db9e5ce757730a61956a64ed3
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at generic_utility.BaseClass.login(BaseClass.java:53)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+        <test-method is-config="true" signature="login()[pri:0, instance:organizations.Organization_IndustryTest@710f4dc7]" started-at="2025-03-13T00:31:47 IST" name="login" finished-at="2025-03-13T00:31:52 IST" duration-ms="5280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="contactWithIndustryTest()[pri:0, instance:contacts.ContactWithIndustryTest@510f3d34]" started-at="2025-03-12T18:22:07 IST" name="contactWithIndustryTest" finished-at="2025-03-12T18:22:07 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: stale element not found
-  (Session info: chrome=134.0.6998.37)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.23.1', revision: '656257d8e9'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4a6fd62db9e5ce757730a61956a64ed3, clickElement {id=f.1CF0246BBACA787CBEF878E6CF34E815.d.0FCC2C365FEA8525C768B2C99225DA81.e.69}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.37, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\asjad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57287}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57287/devtoo..., se:cdpVersion: 134.0.6998.37, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (4a6fd62db9e5ce757730a61956a64ed3)] -> id: submitButton]
-Session ID: 4a6fd62db9e5ce757730a61956a64ed3]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=134.0.6998.37)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.23.1', revision: '656257d8e9'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4a6fd62db9e5ce757730a61956a64ed3, clickElement {id=f.1CF0246BBACA787CBEF878E6CF34E815.d.0FCC2C365FEA8525C768B2C99225DA81.e.69}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.37, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\asjad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57287}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57287/devtoo..., se:cdpVersion: 134.0.6998.37, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (4a6fd62db9e5ce757730a61956a64ed3)] -> id: submitButton]
-Session ID: 4a6fd62db9e5ce757730a61956a64ed3
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at generic_utility.BaseClass.login(BaseClass.java:53)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+        <test-method signature="organization_IndustryTest()[pri:0, instance:organizations.Organization_IndustryTest@710f4dc7]" started-at="2025-03-13T00:31:52 IST" name="organization_IndustryTest" finished-at="2025-03-13T00:32:08 IST" duration-ms="15931" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- contactWithIndustryTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:contacts.ContactWithIndustryTest@510f3d34]" started-at="2025-03-12T18:22:07 IST" name="logout" finished-at="2025-03-12T18:22:07 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- organization_IndustryTest -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:organizations.Organization_IndustryTest@710f4dc7]" started-at="2025-03-13T00:32:08 IST" name="logout" finished-at="2025-03-13T00:32:11 IST" duration-ms="3507" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:contacts.ContactWithIndustryTest@510f3d34]" started-at="2025-03-12T18:22:07 IST" name="closeBrowser" finished-at="2025-03-12T18:22:07 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:organizations.Organization_IndustryTest@710f4dc7]" started-at="2025-03-13T00:32:11 IST" name="closeBrowser" finished-at="2025-03-13T00:32:11 IST" duration-ms="123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- contacts.ContactWithIndustryTest -->
-    </test> <!-- Test5 -->
-    <test started-at="2025-03-12T18:22:01 IST" name="Test1" finished-at="2025-03-12T18:22:07 IST" duration-ms="6725">
+      </class> <!-- organizations.Organization_IndustryTest -->
+    </test> <!-- Test4 -->
+    <test started-at="2025-03-13T00:31:45 IST" name="Test1" finished-at="2025-03-13T00:32:12 IST" duration-ms="26860">
       <class name="organizations.CreateOragnizationTest">
-        <test-method is-config="true" signature="selectBrowser(java.lang.String)[pri:0, instance:organizations.CreateOragnizationTest@22ff4249]" started-at="2025-03-12T18:22:01 IST" name="selectBrowser" finished-at="2025-03-12T18:22:02 IST" duration-ms="1734" status="PASS">
+        <test-method is-config="true" signature="selectBrowser(java.lang.String)[pri:0, instance:organizations.CreateOragnizationTest@2d1ef81a]" started-at="2025-03-13T00:31:45 IST" name="selectBrowser" finished-at="2025-03-13T00:31:47 IST" duration-ms="1715" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -206,175 +63,27 @@ at java.base/java.lang.Thread.run(Thread.java:842)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:organizations.CreateOragnizationTest@22ff4249]" started-at="2025-03-12T18:22:02 IST" name="login" finished-at="2025-03-12T18:22:07 IST" duration-ms="4896" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: stale element not found
-  (Session info: chrome=134.0.6998.37)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.23.1', revision: '656257d8e9'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4a6fd62db9e5ce757730a61956a64ed3, clickElement {id=f.1CF0246BBACA787CBEF878E6CF34E815.d.0FCC2C365FEA8525C768B2C99225DA81.e.69}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.37, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\asjad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57287}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57287/devtoo..., se:cdpVersion: 134.0.6998.37, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (4a6fd62db9e5ce757730a61956a64ed3)] -> id: submitButton]
-Session ID: 4a6fd62db9e5ce757730a61956a64ed3]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=134.0.6998.37)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.23.1', revision: '656257d8e9'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4a6fd62db9e5ce757730a61956a64ed3, clickElement {id=f.1CF0246BBACA787CBEF878E6CF34E815.d.0FCC2C365FEA8525C768B2C99225DA81.e.69}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.37, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\asjad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57287}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57287/devtoo..., se:cdpVersion: 134.0.6998.37, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (4a6fd62db9e5ce757730a61956a64ed3)] -> id: submitButton]
-Session ID: 4a6fd62db9e5ce757730a61956a64ed3
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at generic_utility.BaseClass.login(BaseClass.java:53)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+        <test-method is-config="true" signature="login()[pri:0, instance:organizations.CreateOragnizationTest@2d1ef81a]" started-at="2025-03-13T00:31:47 IST" name="login" finished-at="2025-03-13T00:31:52 IST" duration-ms="5730" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="createOragnizationTest()[pri:0, instance:organizations.CreateOragnizationTest@22ff4249]" started-at="2025-03-12T18:22:07 IST" name="createOragnizationTest" finished-at="2025-03-12T18:22:07 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: stale element not found
-  (Session info: chrome=134.0.6998.37)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.23.1', revision: '656257d8e9'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4a6fd62db9e5ce757730a61956a64ed3, clickElement {id=f.1CF0246BBACA787CBEF878E6CF34E815.d.0FCC2C365FEA8525C768B2C99225DA81.e.69}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.37, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\asjad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57287}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57287/devtoo..., se:cdpVersion: 134.0.6998.37, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (4a6fd62db9e5ce757730a61956a64ed3)] -> id: submitButton]
-Session ID: 4a6fd62db9e5ce757730a61956a64ed3]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=134.0.6998.37)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.23.1', revision: '656257d8e9'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4a6fd62db9e5ce757730a61956a64ed3, clickElement {id=f.1CF0246BBACA787CBEF878E6CF34E815.d.0FCC2C365FEA8525C768B2C99225DA81.e.69}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.37, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\asjad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57287}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57287/devtoo..., se:cdpVersion: 134.0.6998.37, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (4a6fd62db9e5ce757730a61956a64ed3)] -> id: submitButton]
-Session ID: 4a6fd62db9e5ce757730a61956a64ed3
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at generic_utility.BaseClass.login(BaseClass.java:53)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+        <test-method signature="createOragnizationTest()[pri:0, instance:organizations.CreateOragnizationTest@2d1ef81a]" started-at="2025-03-13T00:31:52 IST" name="createOragnizationTest" finished-at="2025-03-13T00:32:08 IST" duration-ms="15624" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createOragnizationTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:organizations.CreateOragnizationTest@22ff4249]" started-at="2025-03-12T18:22:07 IST" name="logout" finished-at="2025-03-12T18:22:07 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="logout()[pri:0, instance:organizations.CreateOragnizationTest@2d1ef81a]" started-at="2025-03-13T00:32:08 IST" name="logout" finished-at="2025-03-13T00:32:12 IST" duration-ms="3560" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:organizations.CreateOragnizationTest@22ff4249]" started-at="2025-03-12T18:22:07 IST" name="closeBrowser" finished-at="2025-03-12T18:22:07 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:organizations.CreateOragnizationTest@2d1ef81a]" started-at="2025-03-13T00:32:12 IST" name="closeBrowser" finished-at="2025-03-13T00:32:12 IST" duration-ms="163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- organizations.CreateOragnizationTest -->
     </test> <!-- Test1 -->
-    <test started-at="2025-03-12T18:22:01 IST" name="Test2" finished-at="2025-03-12T18:22:07 IST" duration-ms="6867">
-      <class name="organizations.Organization_PhoneNoTest">
-        <test-method is-config="true" signature="selectBrowser(java.lang.String)[pri:0, instance:organizations.Organization_PhoneNoTest@7a8c8dcf]" started-at="2025-03-12T18:22:01 IST" name="selectBrowser" finished-at="2025-03-12T18:22:04 IST" duration-ms="3125" status="PASS">
+    <test started-at="2025-03-13T00:31:45 IST" name="Test3" finished-at="2025-03-13T00:32:23 IST" duration-ms="37693">
+      <class name="contacts.CreateContactTest">
+        <test-method is-config="true" signature="selectBrowser(java.lang.String)[pri:0, instance:contacts.CreateContactTest@2a5c8d3f]" started-at="2025-03-13T00:31:45 IST" name="selectBrowser" finished-at="2025-03-13T00:31:48 IST" duration-ms="3156" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -385,171 +94,201 @@ at java.base/java.lang.Thread.run(Thread.java:842)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:organizations.Organization_PhoneNoTest@7a8c8dcf]" started-at="2025-03-12T18:22:04 IST" name="login" finished-at="2025-03-12T18:22:07 IST" duration-ms="3673" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: stale element not found
-  (Session info: MicrosoftEdge=134.0.3124.51)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.23.1', revision: '656257d8e9'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [89d04636c4ba51b2776e5b26c2651bcc, clickElement {id=f.B9C196C072EF6CCD5452FF596C822B59.d.2CF0DF9E4C7D861AFB5C96453CC7DA95.e.34}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 134.0.3124.51, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57335}, msedge: {msedgedriverVersion: 134.0.3124.51 (10e0bb621722..., userDataDir: C:\Users\asjad\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57335/devtoo..., se:cdpVersion: 134.0.3124.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (89d04636c4ba51b2776e5b26c2651bcc)] -> id: submitButton]
-Session ID: 89d04636c4ba51b2776e5b26c2651bcc]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: MicrosoftEdge=134.0.3124.51)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.23.1', revision: '656257d8e9'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [89d04636c4ba51b2776e5b26c2651bcc, clickElement {id=f.B9C196C072EF6CCD5452FF596C822B59.d.2CF0DF9E4C7D861AFB5C96453CC7DA95.e.34}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 134.0.3124.51, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57335}, msedge: {msedgedriverVersion: 134.0.3124.51 (10e0bb621722..., userDataDir: C:\Users\asjad\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57335/devtoo..., se:cdpVersion: 134.0.3124.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (89d04636c4ba51b2776e5b26c2651bcc)] -> id: submitButton]
-Session ID: 89d04636c4ba51b2776e5b26c2651bcc
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at generic_utility.BaseClass.login(BaseClass.java:53)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+        <test-method is-config="true" signature="login()[pri:0, instance:contacts.CreateContactTest@2a5c8d3f]" started-at="2025-03-13T00:31:48 IST" name="login" finished-at="2025-03-13T00:31:53 IST" duration-ms="5335" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="organization_PhoneNoTest()[pri:0, instance:organizations.Organization_PhoneNoTest@7a8c8dcf]" started-at="2025-03-12T18:22:07 IST" name="organization_PhoneNoTest" finished-at="2025-03-12T18:22:07 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: stale element not found
-  (Session info: MicrosoftEdge=134.0.3124.51)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.23.1', revision: '656257d8e9'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [89d04636c4ba51b2776e5b26c2651bcc, clickElement {id=f.B9C196C072EF6CCD5452FF596C822B59.d.2CF0DF9E4C7D861AFB5C96453CC7DA95.e.34}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 134.0.3124.51, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57335}, msedge: {msedgedriverVersion: 134.0.3124.51 (10e0bb621722..., userDataDir: C:\Users\asjad\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57335/devtoo..., se:cdpVersion: 134.0.3124.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (89d04636c4ba51b2776e5b26c2651bcc)] -> id: submitButton]
-Session ID: 89d04636c4ba51b2776e5b26c2651bcc]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: MicrosoftEdge=134.0.3124.51)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.23.1', revision: '656257d8e9'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [89d04636c4ba51b2776e5b26c2651bcc, clickElement {id=f.B9C196C072EF6CCD5452FF596C822B59.d.2CF0DF9E4C7D861AFB5C96453CC7DA95.e.34}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 134.0.3124.51, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57335}, msedge: {msedgedriverVersion: 134.0.3124.51 (10e0bb621722..., userDataDir: C:\Users\asjad\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57335/devtoo..., se:cdpVersion: 134.0.3124.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (89d04636c4ba51b2776e5b26c2651bcc)] -> id: submitButton]
-Session ID: 89d04636c4ba51b2776e5b26c2651bcc
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at generic_utility.BaseClass.login(BaseClass.java:53)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+        <test-method signature="createContactTest()[pri:0, instance:contacts.CreateContactTest@2a5c8d3f]" started-at="2025-03-13T00:31:53 IST" name="createContactTest" finished-at="2025-03-13T00:32:19 IST" duration-ms="25612" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- organization_PhoneNoTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:organizations.Organization_PhoneNoTest@7a8c8dcf]" started-at="2025-03-12T18:22:07 IST" name="logout" finished-at="2025-03-12T18:22:07 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- createContactTest -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:contacts.CreateContactTest@2a5c8d3f]" started-at="2025-03-13T00:32:19 IST" name="logout" finished-at="2025-03-13T00:32:22 IST" duration-ms="3363" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:organizations.Organization_PhoneNoTest@7a8c8dcf]" started-at="2025-03-12T18:22:07 IST" name="closeBrowser" finished-at="2025-03-12T18:22:07 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:contacts.CreateContactTest@2a5c8d3f]" started-at="2025-03-13T00:32:22 IST" name="closeBrowser" finished-at="2025-03-13T00:32:23 IST" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- contacts.CreateContactTest -->
+    </test> <!-- Test3 -->
+    <test started-at="2025-03-13T00:31:45 IST" name="Test5" finished-at="2025-03-13T00:32:26 IST" duration-ms="41630">
+      <class name="contacts.ContactWithIndustryTest">
+        <test-method is-config="true" signature="selectBrowser(java.lang.String)[pri:0, instance:contacts.ContactWithIndustryTest@7817fd62]" started-at="2025-03-13T00:31:45 IST" name="selectBrowser" finished-at="2025-03-13T00:31:47 IST" duration-ms="1718" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:contacts.ContactWithIndustryTest@7817fd62]" started-at="2025-03-13T00:31:47 IST" name="login" finished-at="2025-03-13T00:31:52 IST" duration-ms="5851" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="contactWithIndustryTest()[pri:0, instance:contacts.ContactWithIndustryTest@7817fd62]" started-at="2025-03-13T00:31:52 IST" name="contactWithIndustryTest" finished-at="2025-03-13T00:32:23 IST" duration-ms="30752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactWithIndustryTest -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:contacts.ContactWithIndustryTest@7817fd62]" started-at="2025-03-13T00:32:23 IST" name="logout" finished-at="2025-03-13T00:32:26 IST" duration-ms="3189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:contacts.ContactWithIndustryTest@7817fd62]" started-at="2025-03-13T00:32:26 IST" name="closeBrowser" finished-at="2025-03-13T00:32:26 IST" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- contacts.ContactWithIndustryTest -->
+    </test> <!-- Test5 -->
+    <test started-at="2025-03-13T00:32:04 IST" name="Test6" finished-at="2025-03-13T00:34:35 IST" duration-ms="150257">
+      <class name="organizations.Organization_PhoneNoTest">
+        <test-method is-config="true" signature="selectBrowser(java.lang.String)[pri:0, instance:organizations.Organization_PhoneNoTest@fa4c865]" started-at="2025-03-13T00:32:31 IST" name="selectBrowser" finished-at="2025-03-13T00:32:34 IST" duration-ms="2709" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:organizations.Organization_PhoneNoTest@fa4c865]" started-at="2025-03-13T00:32:34 IST" name="login" finished-at="2025-03-13T00:32:35 IST" duration-ms="1168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="organization_PhoneNoTest()[pri:0, instance:organizations.Organization_PhoneNoTest@fa4c865]" started-at="2025-03-13T00:32:35 IST" name="organization_PhoneNoTest" finished-at="2025-03-13T00:32:53 IST" duration-ms="17328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- organization_PhoneNoTest -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:organizations.Organization_PhoneNoTest@fa4c865]" started-at="2025-03-13T00:32:53 IST" name="logout" finished-at="2025-03-13T00:32:56 IST" duration-ms="3102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:organizations.Organization_PhoneNoTest@fa4c865]" started-at="2025-03-13T00:32:56 IST" name="closeBrowser" finished-at="2025-03-13T00:32:56 IST" duration-ms="161" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- organizations.Organization_PhoneNoTest -->
-    </test> <!-- Test2 -->
+      <class name="organizations.CreateOragnizationTest">
+        <test-method is-config="true" signature="selectBrowser(java.lang.String)[pri:0, instance:organizations.CreateOragnizationTest@4c178a76]" started-at="2025-03-13T00:32:04 IST" name="selectBrowser" finished-at="2025-03-13T00:32:07 IST" duration-ms="2942" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:organizations.CreateOragnizationTest@4c178a76]" started-at="2025-03-13T00:32:07 IST" name="login" finished-at="2025-03-13T00:32:13 IST" duration-ms="5531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="createOragnizationTest()[pri:0, instance:organizations.CreateOragnizationTest@4c178a76]" started-at="2025-03-13T00:32:13 IST" name="createOragnizationTest" finished-at="2025-03-13T00:32:28 IST" duration-ms="15371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOragnizationTest -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:organizations.CreateOragnizationTest@4c178a76]" started-at="2025-03-13T00:32:28 IST" name="logout" finished-at="2025-03-13T00:32:31 IST" duration-ms="2941" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:organizations.CreateOragnizationTest@4c178a76]" started-at="2025-03-13T00:32:31 IST" name="closeBrowser" finished-at="2025-03-13T00:32:31 IST" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- organizations.CreateOragnizationTest -->
+      <class name="organizations.Organization_IndustryTest">
+        <test-method is-config="true" signature="selectBrowser(java.lang.String)[pri:0, instance:organizations.Organization_IndustryTest@544fa968]" started-at="2025-03-13T00:33:27 IST" name="selectBrowser" finished-at="2025-03-13T00:33:30 IST" duration-ms="2691" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:organizations.Organization_IndustryTest@544fa968]" started-at="2025-03-13T00:33:30 IST" name="login" finished-at="2025-03-13T00:33:35 IST" duration-ms="4480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="organization_IndustryTest()[pri:0, instance:organizations.Organization_IndustryTest@544fa968]" started-at="2025-03-13T00:33:35 IST" name="organization_IndustryTest" finished-at="2025-03-13T00:33:50 IST" duration-ms="15778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- organization_IndustryTest -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:organizations.Organization_IndustryTest@544fa968]" started-at="2025-03-13T00:33:50 IST" name="logout" finished-at="2025-03-13T00:33:58 IST" duration-ms="7918" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:organizations.Organization_IndustryTest@544fa968]" started-at="2025-03-13T00:33:58 IST" name="closeBrowser" finished-at="2025-03-13T00:33:58 IST" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- organizations.Organization_IndustryTest -->
+      <class name="contacts.CreateContactTest">
+        <test-method is-config="true" signature="selectBrowser(java.lang.String)[pri:0, instance:contacts.CreateContactTest@3bd82cf5]" started-at="2025-03-13T00:32:56 IST" name="selectBrowser" finished-at="2025-03-13T00:32:58 IST" duration-ms="2652" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:contacts.CreateContactTest@3bd82cf5]" started-at="2025-03-13T00:32:58 IST" name="login" finished-at="2025-03-13T00:33:00 IST" duration-ms="1220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="createContactTest()[pri:0, instance:contacts.CreateContactTest@3bd82cf5]" started-at="2025-03-13T00:33:00 IST" name="createContactTest" finished-at="2025-03-13T00:33:24 IST" duration-ms="24323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactTest -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:contacts.CreateContactTest@3bd82cf5]" started-at="2025-03-13T00:33:24 IST" name="logout" finished-at="2025-03-13T00:33:27 IST" duration-ms="3212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:contacts.CreateContactTest@3bd82cf5]" started-at="2025-03-13T00:33:27 IST" name="closeBrowser" finished-at="2025-03-13T00:33:27 IST" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- contacts.CreateContactTest -->
+      <class name="contacts.ContactWithIndustryTest">
+        <test-method is-config="true" signature="selectBrowser(java.lang.String)[pri:0, instance:contacts.ContactWithIndustryTest@247bddad]" started-at="2025-03-13T00:33:58 IST" name="selectBrowser" finished-at="2025-03-13T00:34:01 IST" duration-ms="2800" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:contacts.ContactWithIndustryTest@247bddad]" started-at="2025-03-13T00:34:01 IST" name="login" finished-at="2025-03-13T00:34:05 IST" duration-ms="4194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="contactWithIndustryTest()[pri:0, instance:contacts.ContactWithIndustryTest@247bddad]" started-at="2025-03-13T00:34:05 IST" name="contactWithIndustryTest" finished-at="2025-03-13T00:34:32 IST" duration-ms="26242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactWithIndustryTest -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:contacts.ContactWithIndustryTest@247bddad]" started-at="2025-03-13T00:34:32 IST" name="logout" finished-at="2025-03-13T00:34:35 IST" duration-ms="2973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:contacts.ContactWithIndustryTest@247bddad]" started-at="2025-03-13T00:34:35 IST" name="closeBrowser" finished-at="2025-03-13T00:34:35 IST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- contacts.ContactWithIndustryTest -->
+    </test> <!-- Test6 -->
   </suite> <!-- Suite -->
 </testng-results>

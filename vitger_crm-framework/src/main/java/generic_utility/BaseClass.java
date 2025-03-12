@@ -23,7 +23,7 @@ public class BaseClass {
 	private static ThreadLocal<WebDriver> sdriver = new ThreadLocal<WebDriver>();
 
 	FileUtility fu = new FileUtility();
-	public static WebDriver driver ;
+	public WebDriver driver ;
 //	public static WebDriver driver;
 
 	@Parameters("Browser")
@@ -31,16 +31,17 @@ public class BaseClass {
 	public void selectBrowser(String Browser) throws IOException {
 
 		if (Browser.equalsIgnoreCase("Chrome"))
-			sdriver.set(new ChromeDriver());
+			driver = new ChromeDriver();
 		else if (Browser.equalsIgnoreCase("edge"))
-			sdriver.set(new EdgeDriver());
+			driver = new EdgeDriver();
 		else if (Browser.equalsIgnoreCase("safari"))
-			sdriver.set(new SafariDriver());
+			driver = new SafariDriver();
 		else if (Browser.equalsIgnoreCase("Firefox"))
-			sdriver.set(new FirefoxDriver());
+			driver = new FirefoxDriver();
 		else
-			sdriver.set(new ChromeDriver());
+			driver = new ChromeDriver();
 		
+		sdriver.set(driver);
 		driver = getDriver();
 
 		driver.manage().window().maximize();
@@ -48,14 +49,15 @@ public class BaseClass {
 	}
 	
 	 public static WebDriver getDriver() {
+		 
 	        return sdriver.get(); }
 
 	@BeforeMethod (groups = {"SmokeTest","RegressionTest"})
 	public void login() throws IOException {
 		String name = fu.getDataFromProp("un");
 		String pass = fu.getDataFromProp("pass");
-		LoginPage lp = new LoginPage(getDriver());
-		getDriver().get(fu.getDataFromProp("url"));
+		LoginPage lp = new LoginPage(driver);
+		driver.get(fu.getDataFromProp("url"));
 		lp.getUsername().sendKeys(name);
 		lp.getPassword().sendKeys(pass);
 		lp.getSubmit().click();

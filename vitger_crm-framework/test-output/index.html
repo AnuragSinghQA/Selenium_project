@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-skipped">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">5 tests</span>
+                    <span class="test-stats">6 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,31 +92,61 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,  3 skipped,  </span>
+                    <span class="method-stats">9 methods,   9 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="contacts.ContactWithIndustryTest" class="method navigator-link" hash-for-method="contactWithIndustryTest">contactWithIndustryTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="contacts.ContactWithIndustryTest" class="method navigator-link" hash-for-method="contactWithIndustryTest">contactWithIndustryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="contacts.CreateContactTest" class="method navigator-link" hash-for-method="createContactTest">createContactTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="contacts.CreateContactTest" class="method navigator-link" hash-for-method="createContactTest">createContactTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="organizations.CreateOragnizationTest" class="method navigator-link" hash-for-method="createOragnizationTest">createOragnizationTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="organizations.CreateOragnizationTest" class="method navigator-link" hash-for-method="createOragnizationTest">createOragnizationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="organizations.Organization_IndustryTest" class="method navigator-link" hash-for-method="organization_IndustryTest">organization_IndustryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="organizations.Organization_IndustryTest" class="method navigator-link" hash-for-method="organization_IndustryTest">organization_IndustryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="organizations.Organization_PhoneNoTest" class="method navigator-link" hash-for-method="organization_PhoneNoTest">organization_PhoneNoTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -128,97 +158,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-skipped">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">organizations.Organization_PhoneNoTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="organization_PhoneNoTest">
-                  </a> <!-- organization_PhoneNoTest -->
-                  <span class="method-name">organization_PhoneNoTest</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: MicrosoftEdge=134.0.3124.51)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [89d04636c4ba51b2776e5b26c2651bcc, clickElement {id=f.B9C196C072EF6CCD5452FF596C822B59.d.2CF0DF9E4C7D861AFB5C96453CC7DA95.e.34}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 134.0.3124.51, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57335}, msedge: {msedgedriverVersion: 134.0.3124.51 (10e0bb621722..., userDataDir: C:\Users\asjad\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57335/devtoo..., se:cdpVersion: 134.0.3124.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (89d04636c4ba51b2776e5b26c2651bcc)] -&gt; id: submitButton]
-Session ID: 89d04636c4ba51b2776e5b26c2651bcc
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-	at generic_utility.BaseClass.login(BaseClass.java:53)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">organizations.CreateOragnizationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createOragnizationTest">
-                  </a> <!-- createOragnizationTest -->
-                  <span class="method-name">createOragnizationTest</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=134.0.6998.37)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4a6fd62db9e5ce757730a61956a64ed3, clickElement {id=f.1CF0246BBACA787CBEF878E6CF34E815.d.0FCC2C365FEA8525C768B2C99225DA81.e.69}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.37, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\asjad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57287}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57287/devtoo..., se:cdpVersion: 134.0.6998.37, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (4a6fd62db9e5ce757730a61956a64ed3)] -&gt; id: submitButton]
-Session ID: 4a6fd62db9e5ce757730a61956a64ed3
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-	at generic_utility.BaseClass.login(BaseClass.java:53)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">contacts.ContactWithIndustryTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -227,39 +169,98 @@ Session ID: 4a6fd62db9e5ce757730a61956a64ed3
                   <a name="contactWithIndustryTest">
                   </a> <!-- contactWithIndustryTest -->
                   <span class="method-name">contactWithIndustryTest</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=134.0.6998.37)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4a6fd62db9e5ce757730a61956a64ed3, clickElement {id=f.1CF0246BBACA787CBEF878E6CF34E815.d.0FCC2C365FEA8525C768B2C99225DA81.e.69}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.37, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\asjad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57287}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57287/devtoo..., se:cdpVersion: 134.0.6998.37, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (4a6fd62db9e5ce757730a61956a64ed3)] -&gt; id: submitButton]
-Session ID: 4a6fd62db9e5ce757730a61956a64ed3
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-	at generic_utility.BaseClass.login(BaseClass.java:53)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="contactWithIndustryTest">
+                  </a> <!-- contactWithIndustryTest -->
+                  <span class="method-name">contactWithIndustryTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">contacts.CreateContactTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createContactTest">
+                  </a> <!-- createContactTest -->
+                  <span class="method-name">createContactTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createContactTest">
+                  </a> <!-- createContactTest -->
+                  <span class="method-name">createContactTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">organizations.Organization_IndustryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="organization_IndustryTest">
+                  </a> <!-- organization_IndustryTest -->
+                  <span class="method-name">organization_IndustryTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="organization_IndustryTest">
+                  </a> <!-- organization_IndustryTest -->
+                  <span class="method-name">organization_IndustryTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">organizations.Organization_PhoneNoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="organization_PhoneNoTest">
+                  </a> <!-- organization_PhoneNoTest -->
+                  <span class="method-name">organization_PhoneNoTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">organizations.CreateOragnizationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createOragnizationTest">
+                  </a> <!-- createOragnizationTest -->
+                  <span class="method-name">createOragnizationTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createOragnizationTest">
+                  </a> <!-- createOragnizationTest -->
+                  <span class="method-name">createOragnizationTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -303,6 +304,16 @@ Session ID: 4a6fd62db9e5ce757730a61956a64ed3
       &lt;class name=&quot;contacts.ContactWithIndustryTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test5 --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Test6&quot;&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;edge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;organizations.CreateOragnizationTest&quot;/&gt;
+      &lt;class name=&quot;organizations.Organization_PhoneNoTest&quot;/&gt;
+      &lt;class name=&quot;contacts.CreateContactTest&quot;/&gt;
+      &lt;class name=&quot;organizations.Organization_IndustryTest&quot;/&gt;
+      &lt;class name=&quot;contacts.ContactWithIndustryTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test6 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -328,6 +339,9 @@ Session ID: 4a6fd62db9e5ce757730a61956a64ed3
               <li>
                 <span class="test-name">Test5 (1 class)</span>
               </li>
+              <li>
+                <span class="test-name">Test6 (5 classes)</span>
+              </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -340,6 +354,10 @@ Session ID: 4a6fd62db9e5ce757730a61956a64ed3
               <span class="test-group-name">RegressionTest</span>
               <br/>
               <div class="method-in-group">
+                <span class="method-in-group-name">organization_IndustryTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">organization_PhoneNoTest</span>
                 <br/>
               </div> <!-- method-in-group -->
@@ -349,6 +367,10 @@ Session ID: 4a6fd62db9e5ce757730a61956a64ed3
               <br/>
               <div class="method-in-group">
                 <span class="method-in-group-name">contactWithIndustryTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createContactTest</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
@@ -372,24 +394,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'contactWithIndustryTest')
 data.setCell(0, 2, 'contacts.ContactWithIndustryTest')
-data.setCell(0, 3, 0);
+data.setCell(0, 3, 30752);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'createOragnizationTest')
-data.setCell(1, 2, 'organizations.CreateOragnizationTest')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'contactWithIndustryTest')
+data.setCell(1, 2, 'contacts.ContactWithIndustryTest')
+data.setCell(1, 3, 26242);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'organization_PhoneNoTest')
-data.setCell(2, 2, 'organizations.Organization_PhoneNoTest')
-data.setCell(2, 3, 0);
+data.setCell(2, 1, 'createContactTest')
+data.setCell(2, 2, 'contacts.CreateContactTest')
+data.setCell(2, 3, 25612);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'createContactTest')
+data.setCell(3, 2, 'contacts.CreateContactTest')
+data.setCell(3, 3, 24323);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'organization_PhoneNoTest')
+data.setCell(4, 2, 'organizations.Organization_PhoneNoTest')
+data.setCell(4, 3, 17328);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'organization_IndustryTest')
+data.setCell(5, 2, 'organizations.Organization_IndustryTest')
+data.setCell(5, 3, 15931);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'organization_IndustryTest')
+data.setCell(6, 2, 'organizations.Organization_IndustryTest')
+data.setCell(6, 3, 15778);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'createOragnizationTest')
+data.setCell(7, 2, 'organizations.CreateOragnizationTest')
+data.setCell(7, 3, 15624);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'createOragnizationTest')
+data.setCell(8, 2, 'organizations.CreateOragnizationTest')
+data.setCell(8, 3, 15371);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -422,6 +468,20 @@ return data;
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
+              <div class="chronological-class-name">organizations.Organization_PhoneNoTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">selectBrowser(edge)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">contacts.CreateContactTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">selectBrowser(edge)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">organizations.Organization_IndustryTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">selectBrowser(Chrome)</span>
@@ -429,83 +489,250 @@ return data;
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">organizations.Organization_PhoneNoTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">selectBrowser(edge)</span>
-                <span class="method-start">1 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">contacts.CreateContactTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">selectBrowser(edge)</span>
-                <span class="method-start">1 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">contacts.ContactWithIndustryTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">selectBrowser(Chrome)</span>
-                <span class="method-start">1 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">organizations.CreateOragnizationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">login</span>
-                <span class="method-start">1754 ms</span>
+                <span class="method-start">1727 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">organizations.Organization_IndustryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1727 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">contacts.ContactWithIndustryTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">login</span>
-                <span class="method-start">1754 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">organizations.Organization_IndustryTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">login</span>
-                <span class="method-start">1755 ms</span>
+                <span class="method-start">1727 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">contacts.CreateContactTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">3122 ms</span>
+                <span class="method-start">3157 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">organizations.Organization_PhoneNoTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">login</span>
-                <span class="method-start">3128 ms</span>
+                <span class="method-start">3237 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
+              <div class="chronological-class-name">organizations.Organization_IndustryTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">organization_IndustryTest</span>
+                <span class="method-start">7007 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">organizations.CreateOragnizationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createOragnizationTest</span>
+                <span class="method-start">7457 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">contacts.ContactWithIndustryTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">contactWithIndustryTest</span>
+                <span class="method-start">7578 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">contacts.CreateContactTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createContactTest</span>
+                <span class="method-start">8492 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">organizations.Organization_PhoneNoTest</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">15504 ms</span>
+                <span class="method-start">19440 ms</span>
               </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">organizations.CreateOragnizationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">selectBrowser(edge)</span>
+                <span class="method-start">19515 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">22459 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">organizations.Organization_IndustryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">logout</span>
+                <span class="method-start">22942 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">organizations.CreateOragnizationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">logout</span>
+                <span class="method-start">23082 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">organizations.Organization_IndustryTest</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">15504 ms</span>
+                <span class="method-start">26456 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">organizations.CreateOragnizationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">26643 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <span class="method-name">createOragnizationTest</span>
+                <span class="method-start">27990 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">contacts.CreateContactTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">logout</span>
+                <span class="method-start">34105 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">37468 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">contacts.ContactWithIndustryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">logout</span>
+                <span class="method-start">38333 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">41522 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">organizations.CreateOragnizationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">logout</span>
+                <span class="method-start">43363 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">46305 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">organizations.Organization_PhoneNoTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">selectBrowser(edge)</span>
+                <span class="method-start">46428 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">49138 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">organization_PhoneNoTest</span>
+                <span class="method-start">50306 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout</span>
+                <span class="method-start">67636 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">70738 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">contacts.CreateContactTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">selectBrowser(edge)</span>
+                <span class="method-start">70900 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">73553 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createContactTest</span>
+                <span class="method-start">74773 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout</span>
+                <span class="method-start">99098 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">102311 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">organizations.Organization_IndustryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">selectBrowser(edge)</span>
+                <span class="method-start">102466 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">105157 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">organization_IndustryTest</span>
+                <span class="method-start">109637 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout</span>
+                <span class="method-start">125416 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">133335 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">contacts.ContactWithIndustryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">selectBrowser(edge)</span>
+                <span class="method-start">133442 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">136243 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">contactWithIndustryTest</span>
+                <span class="method-start">140437 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout</span>
+                <span class="method-start">166681 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">169654 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -49,7 +49,7 @@ public class ListenerImplementataion implements ITestListener, ISuiteListener {
 		String methodName = result.getMethod().getMethodName();
 		test = report.createTest(methodName);
 		test.log(com.aventstack.extentreports.Status.FAIL, "======FAILURE=====" + methodName);
-		WebDriver driver = BaseClass.driver;
+		WebDriver driver = BaseClass.getDriver();
 		TakesScreenshot tks = (TakesScreenshot)driver;
 		String src = tks.getScreenshotAs(OutputType.BASE64);
 		test.addScreenCaptureFromBase64String(src, "errorfile");

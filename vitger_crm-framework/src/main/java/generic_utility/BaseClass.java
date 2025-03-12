@@ -74,7 +74,7 @@ public class BaseClass {
 
 	@AfterClass (groups = {"SmokeTest","RegressionTest"})
 	public void closeBrowser() {
-		driver.close();
+		driver.quit();
 	}
 
 }

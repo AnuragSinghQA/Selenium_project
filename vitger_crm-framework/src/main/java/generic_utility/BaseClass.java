@@ -19,41 +19,49 @@ import object_repository.LoginPage;
 import object_repository.LogoutPage;
 
 public class BaseClass {
-	FileUtility fu = new FileUtility();
+	
+	private static ThreadLocal<WebDriver> sdriver = new ThreadLocal<WebDriver>();
 
-	public static WebDriver driver;
+	FileUtility fu = new FileUtility();
+	public static WebDriver driver ;
+//	public static WebDriver driver;
 
 	@Parameters("Browser")
-	@BeforeClass (groups = {"SmokeTest","RegresstionTest"})
+	@BeforeClass (groups = {"SmokeTest","RegressionTest"})
 	public void selectBrowser(String Browser) throws IOException {
 
-		if (Browser.equalsIgnoreCase("chrome"))
-			driver = new ChromeDriver();
+		if (Browser.equalsIgnoreCase("Chrome"))
+			sdriver.set(new ChromeDriver());
 		else if (Browser.equalsIgnoreCase("edge"))
-			driver = new EdgeDriver();
+			sdriver.set(new EdgeDriver());
 		else if (Browser.equalsIgnoreCase("safari"))
-			driver = new SafariDriver();
+			sdriver.set(new SafariDriver());
 		else if (Browser.equalsIgnoreCase("Firefox"))
-			driver = new FirefoxDriver();
+			sdriver.set(new FirefoxDriver());
 		else
-			driver = new ChromeDriver();
+			sdriver.set(new ChromeDriver());
+		
+		driver = getDriver();
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 	}
+	
+	 public static WebDriver getDriver() {
+	        return sdriver.get(); }
 
-	@BeforeMethod (groups = {"SmokeTest","RegresstionTest"})
+	@BeforeMethod (groups = {"SmokeTest","RegressionTest"})
 	public void login() throws IOException {
 		String name = fu.getDataFromProp("un");
 		String pass = fu.getDataFromProp("pass");
-		LoginPage lp = new LoginPage(driver);
-		driver.get(fu.getDataFromProp("url"));
+		LoginPage lp = new LoginPage(getDriver());
+		getDriver().get(fu.getDataFromProp("url"));
 		lp.getUsername().sendKeys(name);
 		lp.getPassword().sendKeys(pass);
 		lp.getSubmit().click();
 	}
 
-	@AfterMethod
+	@AfterMethod (groups = {"SmokeTest","RegressionTest"})
 	public void logout() throws InterruptedException {
 		LogoutPage lg = new LogoutPage(driver);
 		Actions acc = new Actions(driver);
@@ -62,7 +70,7 @@ public class BaseClass {
 		acc.moveToElement(lg.getSignout()).click().build().perform();
 	}
 
-	@AfterClass
+	@AfterClass (groups = {"SmokeTest","RegressionTest"})
 	public void closeBrowser() {
 		driver.close();
 	}

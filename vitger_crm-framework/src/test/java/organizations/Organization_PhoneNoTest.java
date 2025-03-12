@@ -3,6 +3,7 @@ package organizations;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import generic_utility.BaseClass;
@@ -37,10 +38,9 @@ public class Organization_PhoneNoTest extends BaseClass {
 
 		// Verification
 
-		if (s2.contains(orgname)) {
+		Assert.assertTrue(s2.contains(orgname));
 			System.out.println("Test-Case Passed");
-		} else
-			System.out.println("Test-Case Failed");
+		
 
 	}
 

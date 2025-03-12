@@ -16,14 +16,14 @@ public class FileUtility {
 	WebDriver driver;
 
 	public String getDataFromProp(String keys) throws IOException {
-		FileInputStream fis = new FileInputStream("E:\\java\\vitger_crm-framework\\src\\test\\resources\\commonData.properties");
+		FileInputStream fis = new FileInputStream("C:\\Users\\asjad\\git\\Selenium_project\\vitger_crm-framework\\src\\test\\resources\\commonData.properties");
 		Properties pObj = new Properties();
 		pObj.load(fis);
 		return (pObj.getProperty(keys));
 	}
 
 	public String getDataFromExcel(String sheetname, int rownum, int cellnum) throws IOException {
-		FileInputStream excelFile = new FileInputStream("C:\\Users\\asjad\\Downloads\\TestData.xlsx");
+		FileInputStream excelFile = new FileInputStream("C:\\Users\\asjad\\git\\Selenium_project\\vitger_crm-framework\\src\\test\\resources\\TestData.xlsx");
 		Workbook wb = WorkbookFactory.create(excelFile);
 		Sheet sh = wb.getSheet(sheetname);
 		Row row = sh.getRow(rownum);

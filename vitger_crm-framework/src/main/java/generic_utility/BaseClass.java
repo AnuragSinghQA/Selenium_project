@@ -42,6 +42,7 @@ public class BaseClass {
 			options.addArguments("--no-sandbox");
 			options.addArguments("--disable-dev-shm-usage");
 			options.addArguments("--remote-debugging-port=9222");
+			options.addArguments("--window-size=1920,1080");
 			options.addArguments("--headless"); // Add this for headless mode
 
 			// Initialize EdgeDriver

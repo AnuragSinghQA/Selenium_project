@@ -48,7 +48,7 @@ public class ListenerImplementataion implements ITestListener, ISuiteListener {
 	public void onTestFailure(ITestResult result) {
 		String methodName = result.getMethod().getMethodName();
 		test = report.createTest(methodName);
-		test.log(com.aventstack.extentreports.Status.FAIL, "======FAILURE=====" + methodName);
+		test.log(Status.FAIL, "======FAILURE=====" + methodName);
 		WebDriver driver = BaseClass.getDriver();
 		TakesScreenshot tks = (TakesScreenshot)driver;
 		String src = tks.getScreenshotAs(OutputType.BASE64);

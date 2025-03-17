@@ -21,7 +21,7 @@
 	</test> <!--Test -->
 	
 	<test thread-count="1" parallel="tests" name="Test3">
-		<parameter name="Browser" value="edge" />
+		<parameter name="Browser" value="chrome" />
 		<classes>
 			<class name="contacts.CreateContactTest" />
 		</classes>
@@ -42,7 +42,7 @@
 	</test> <!--
 	Test -->
 	<test thread-count="2" parallel="tests" name="Test6">
-		<parameter name="Browser" value="edge" />
+		<parameter name="Browser" value="chrome" />
 		<classes>
 			<class name="organizations.CreateOragnizationTest" />
 			<class name="organizations.Organization_PhoneNoTest" />

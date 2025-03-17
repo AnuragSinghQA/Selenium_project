@@ -13,18 +13,18 @@ import org.testng.annotations.Test;
 
 	@DataProvider
 	public Object[][] add() {
-		Object[][] arr = new Object[3][2];
+		Object[][] arr1 = new Object[3][2];
 		
-		arr[0][0] = "admin";
-		arr[0][1] = "admin";
+		arr1[0][0] = "admin";
+		arr1[0][1] = "admin";
 		
-		arr[1][0] = "admin";
-		arr[1][1] = "admin1";
+		arr1[1][0] = "admin";
+		arr1[1][1] = "admin1";
 
-		arr[2][0] = "admin";
-		arr[2][1] = "admin";
+		arr1[2][0] = "admin";
+		arr1[2][1] = "admin";
 		
-		return arr;
+		return arr1;
 	}
 	
 	

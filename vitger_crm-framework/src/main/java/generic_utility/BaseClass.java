@@ -68,9 +68,9 @@ public class BaseClass {
 	public void logout() throws InterruptedException {
 		LogoutPage lg = new LogoutPage(driver);
 		Actions acc = new Actions(driver);
-		acc.moveToElement(lg.getProfile()).click().build().perform();
+		acc.moveToElement(lg.getProfile()).click().perform();
 		Thread.sleep(2000);
-		acc.moveToElement(lg.getSignout()).click().build().perform();
+		acc.moveToElement(lg.getSignout()).click().perform();
 	}
 
 	@AfterClass(groups = { "SmokeTest", "RegressionTest" })

@@ -69,7 +69,7 @@ public class BaseClass {
 		LogoutPage lg = new LogoutPage(driver);
 		Actions acc = new Actions(driver);
 		acc.moveToElement(lg.getProfile()).click().build().perform();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		acc.moveToElement(lg.getSignout()).click().build().perform();
 	}
 

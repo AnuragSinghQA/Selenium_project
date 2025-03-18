@@ -6,7 +6,6 @@ import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.safari.SafariDriver;
@@ -33,22 +32,9 @@ public class BaseClass {
 
 		if (Browser.equalsIgnoreCase("Chrome"))
 			driver = new ChromeDriver();
-		else if (Browser.equalsIgnoreCase("edge"))
-		{
-			System.setProperty("webdriver.edge.driver", "‪C:\\Users\\asjad\\Downloads\\edgedriver_win64\\msedgedriver.exe");
-
-			// Configure EdgeOptions
-			EdgeOptions options = new EdgeOptions();
-			options.addArguments("--no-sandbox");
-			options.addArguments("--disable-dev-shm-usage");
-			options.addArguments("--remote-debugging-port=9222");
-			options.addArguments("--window-size=1920,1080");
-			options.addArguments("--headless"); // Add this for headless mode
-
-			// Initialize EdgeDriver
-			driver = new EdgeDriver(options);
-		}
-		else if (Browser.equalsIgnoreCase("safari"))
+		else if (Browser.equalsIgnoreCase("edge")) {
+			driver = new EdgeDriver();
+		} else if (Browser.equalsIgnoreCase("safari"))
 			driver = new SafariDriver();
 		else if (Browser.equalsIgnoreCase("Firefox"))
 			driver = new FirefoxDriver();
